@@ -23,7 +23,7 @@ const Cart = () => {
     let userEmail = localStorage.getItem("userEmail");
     // console.log(data,localStorage.getItem("userEmail"),new Date())
     let response = await fetch(
-      "https://mern-backend-bql4.onrender.com//api/orderData",
+      "https://mern-backend-bql4.onrender.com/api/orderData",
       {
         // credentials: 'include',
         // Origin:"http://localhost:3000/login",

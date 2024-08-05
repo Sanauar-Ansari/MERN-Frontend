@@ -11,7 +11,7 @@ const Login = () => {
     e.preventDefault();
 
     const response = await fetch(
-      "https://mern-backend-bql4.onrender.com//api/loginuser",
+      "https://mern-backend-bql4.onrender.com/api/loginuser",
       {
         method: "POST",
         headers: {
