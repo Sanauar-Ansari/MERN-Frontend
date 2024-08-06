@@ -14,10 +14,6 @@ const Cart = () => {
       </div>
     );
   }
-  // const handleRemove = (index)=>{
-  //   console.log(index)
-  //   dispatch({type:"REMOVE",index:index})
-  // }
 
   const handleCheckOut = async () => {
     let userEmail = localStorage.getItem("userEmail");
@@ -25,8 +21,6 @@ const Cart = () => {
     let response = await fetch(
       "https://mern-backend-bql4.onrender.com/api/orderData",
       {
-        // credentials: 'include',
-        // Origin:"http://localhost:3000/login",
         method: "POST",
         headers: {
           "Content-Type": "application/json",
